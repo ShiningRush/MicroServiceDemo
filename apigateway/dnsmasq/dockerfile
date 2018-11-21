@@ -1,0 +1,7 @@
+FROM andyshinn/dnsmasq:2.78
+COPY ./dnsmasq.beta.conf /
+COPY ./dnsmasq.dev.conf /
+COPY ./dnsmasq.pro.conf /
+COPY ./custom-kong-entrypoint.sh /
+
+ENTRYPOINT ["/custom-kong-entrypoint.sh"]
