@@ -5,6 +5,5 @@ def config():
         "manage_web_addr": "192.168.8.11",
         "manage_web_hostname": "devlagoon.fmfe.com",
         "client_web_addr": "192.168.8.11",
-        "client_web_hostname": "devlagoonuser.fmfe.com",
-        "srv_hostname": "devlagoon.fmfe.com"
+        "client_web_hostname": "devlagoonuser.fmfe.com"
     }

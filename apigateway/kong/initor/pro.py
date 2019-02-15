@@ -1,10 +1,9 @@
 def config():
     return {
-        "kong_api_addr": "http://192.168.8.33:8001",
-        "sso_api_addr":"http://192.168.8.11:8002",
-        "manage_web_addr": "192.168.8.11",
-        "manage_web_hostname": "",
-        "client_web_addr": "192.168.8.11",
-        "client_web_hostname": "devlagoon.fmfe.com",
-        "srv_hostname": ""
+        "kong_api_addr": "http://10.0.0.7:8001",
+        "sso_api_addr":"https://ssoapi.followme.com",
+        "manage_web_addr": "10.0.0.7",
+        "manage_web_hostname": "crm.lagoonmarkets.com",
+        "client_web_addr": "10.0.0.7",
+        "client_web_hostname": "user.lagoonmarkets.com"
     }

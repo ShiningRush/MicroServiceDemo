@@ -9,10 +9,10 @@ def main():
         print("please input enviroment")
         return
     
-    # if len(sys.argv) < 3:
-    #     print("please input module")
-    #     return
+    if len(sys.argv) < 3:
+        print("please input module")
+        return
 
-    init.init(sys.argv[1])
+    init.init(sys.argv[1], sys.argv[2])
 
 main()

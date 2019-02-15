@@ -1,7 +1,11 @@
-from .module import lagoon
 from .api import kongapi
+from .module import lagoon
+from .module import contentmanage
+from .module import common
+from .module import oabackend
 
-def init(env):
+
+def init(env, module):
     if env == "dev":
         from . import dev as cfg
     
@@ -15,4 +19,11 @@ def init(env):
     api = kongapi.KongApi(c["kong_api_addr"])
     c["api"] = api
     
-    lagoon.init(c)
+    modules = {
+        'lagoon': lagoon.init,
+        'contentmanage': contentmanage.init,
+        'common': common.init,
+        'oabackend': oabackend.init
+    }
+
+    modules[module](c)

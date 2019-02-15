@@ -17,7 +17,7 @@
 ### 执行
 
 ```
-py ./main.py [env]
+py ./main.py [env] [module]
 ```
 
 `[env]` 为要初始化的环境，可选为：
@@ -25,7 +25,13 @@ py ./main.py [env]
 - beta
 - pro
 
-例如要初始化beta环境，请运行：
+`[module]` 为要初始化的模块，可选为：
+- lagoon
+- contentmanage
+- common
+- oabackend
+
+例如要初始化beta环境的lagoon模块，请运行：
 ```
-py ./main.py beta
+py ./main.py beta lagoon
 ```
