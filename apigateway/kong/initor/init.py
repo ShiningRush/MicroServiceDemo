@@ -12,7 +12,7 @@ def init(env, module):
     if env == "beta":
         from . import beta as cfg
     
-    if env == "pro":
+    if env == "prod":
         from . import pro as cfg
 
     c = cfg.config()
